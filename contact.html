@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce website Pooja-InternshipStudio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./Fonts/font-awesome-4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="img/newlogo1.PNG" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Product</a></li>
+          <li><a href="category.html">Category</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li>
+            <a href="search.html">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li id="lg-bag">
+            <a href="cart.html"
+              ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+            ></a>
+          </li>
+          <a href="#" id="close"
+            ><i class="fa fa-times" aria-hidden="true"></i
+          ></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"
+          ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+        ></a>
+        <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <section id="about-header">
+      <h2>#let's_talk</h2>
+      <p>LEAVE A MESSAGE,We love to hear from you!</p>
+    </section>
+    <section id="contact-details" class="section-p1">
+      <div class="details">
+        <span>GET IN TOUCH</span>
+        <h2>Visit one of our agency loctaions or contact us today</h2>
+        <h3>Head Office</h3>
+        <div>
+          <li>
+            <i class="fa fa-map-o" aria-hidden="true"></i>
+            <p>56 Glassford Street Glassgow G1 UL Manhattan</p>
+          </li>
+          <li>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <p>contact@example.com</p>
+          </li>
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>+1 347 632 2489</p>
+          </li>
+          <li>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <p>Monday to Saturday: 9:00 am to 6:00 pm</p>
+          </li>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.16459482124!2d-74.05163345510609!3d40.75916223098221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1721546238565!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <section id="form-details">
+      <form action="">
+        <span>LEAVE A MESSAGE</span>
+        <h2>We love to hear from you</h2>
+        <input id="name" type="text" placeholder="Your Name" />
+        <h6 id="H6name"></h6>
+        <input id="email" type="text" placeholder="E-mail" />
+        <h6 id="H6email"></h6>
+        <input id="sub" type="text" placeholder="Subject" />
+        <h6 id="H6sub"></h6>
+        <textarea
+          name=""
+          id="mess"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <h6 id="H6mess"></h6>
+
+        <button class="normal" onclick="Send()">Submit</button>
+        <!-- <div class="popup" id="popup">
+          <img src="img/tick.png" />
+          <h2>Thank you for your feedback!!</h2>
+          <button type="button" onclick="close()">OK</button>
+        </div> -->
+      </form>
+      <div class="people">
+        <div>
+          <img src="img/people/1.png" alt="" />
+          <p>
+            <span>John Deo </span> Senior Marketing Manager <br />
+            Phone: +000 123 000 77 88 <br />
+            Email: contact@example.com
+          </p>
+        </div>
+        <div>
+          <img src="img/people/2.png" alt="" />
+          <p>
+            <span>William Smith </span> Senior Marketing Manager <br />
+            Phone: +000 123 000 77 88 <br />
+            Email: contact@example.com
+          </p>
+        </div>
+        <div>
+          <img src="img/people/3.png" alt="" />
+          <p>
+            <span>Emma Stone </span> Senior Marketing Manager <br />
+            Phone: +000 123 000 77 88 <br />
+            Email: contact@example.com
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>
+          Get E-mail updates about our latest shop and
+          <span>Special offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your E-mail Address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+    <div class="topbtn">
+      <a
+        id="button"
+        href="#about-header"
+        class="btn btn-lg btn-outline-danger"
+        role="button"
+      >
+        <i class="fa fa-caret-up" aria-hidden="true"></i>
+      </a>
+    </div>
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/newlogo1.PNG" alt="" />
+        <h4>Contact</h4>
+        <p>
+          <strong>Address :</strong>562 Wellington Road, Street 32, San
+          Francisco
+        </p>
+        <p><strong>Phone :</strong>+01 2222 365/+91 01234 56789</p>
+        <p><strong>Hours :</strong>10:00-18:00, Mon-Sat</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store & Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+      <div class="copy">
+        <p>@ 2024, xyz etc - HTML CSS Ecommerce webpage</p>
+      </div>
+    </footer>
+    <script>
+      // let popup = document.getElementById("popup");
+      // function Send() {
+      //   popup.classList.add("open-popup");
+      // }
+      // function close() {
+      //   popup.classList.remove("open-popup");
+      // }
+      function Send() {
+        alert("Thank you for your feedback..!!");
+      }
+    </script>
+  </body>
+</html>

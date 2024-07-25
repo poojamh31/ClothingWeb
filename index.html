@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce website Pooja-InternshipStudio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./Fonts/font-awesome-4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="img/newlogo1.PNG" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Product</a></li>
+          <li><a href="category.html">Category</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="search.html">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li id="lg-bag">
+            <a href="cart.html"
+              ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+            ></a>
+          </li>
+          <a href="#" id="close"
+            ><i class="fa fa-times" aria-hidden="true"></i
+          ></a>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"
+          ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+        ></a>
+        <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>
+      </div>
+    </section>
+    <section id="ImgSection">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="./img/banner/WEB_BANNER.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="./img/banner/Homepage-Banner-1_0lXCmFN.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="./img/banner/Homepage-Banner_m6M9LV9.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="./img/banner/Homepage-Banner_Tops-Party_1_tXnW8e2.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="./img/banner/Web-Banner-Launch.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="feature" class="section-p1">
+      
+      <div class="fe-box">
+        <img src="./img/features/f1.png" alt="" />
+        <h6>Free Shipping</h6>
+      </div>
+      <div class="fe-box">
+        <img src="./img/features/f2.png" alt="" />
+        <h6>Online Order</h6>
+      </div>
+      <div class="fe-box">
+        <img src="./img/features/f3.png" alt="" />
+        <h6>Save Money</h6>
+      </div>
+      <div class="fe-box">
+        <img src="./img/features/f4.png" alt="" />
+        <h6>Promotions</h6>
+      </div>
+      <div class="fe-box">
+        <img src="./img/features/f5.png" alt="" />
+        <h6>Happy Sell</h6>
+      </div>
+      <div class="fe-box">
+        <img src="./img/features/f6.png" alt="" />
+        <h6>24/7 Support</h6>
+      </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+      <h2> Various Categories</h2>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="./img/products/Fullsleece.webp" alt="" />
+        </div>
+        <div class="pro">
+          <img src="./img/products/Hoodies.webp" alt="" />
+        </div>
+        <div class="pro">
+          <img src="./img/products/Jeans.webp" alt="" />
+        </div>
+        <div class="pro">
+          <img src="./img/products/jogger.webp" alt="" />
+        </div>
+        <div class="pro">
+          <img src="./img/products/tshirt.webp" alt="" />
+        </div>
+        <div class="pro">
+          <img src="./img/products/supima.webp" alt="" />
+        </div>
+        <div class="pro">
+          <img src="./img/products/Puffer j.webp" alt="" />
+        </div>
+        <div class="pro">
+          <img src="./img/products/sweatsh.webp" alt="" />
+    </section>
+    <section id="banner" class="section-m1">
+      <h4>Welcome Offer</h4>
+      <h2>Up to <span> RS.500 Off</span>- On All Orders Rs.1499</h2>
+      <button class="normal">Explore More</button>
+    </section>
+    <section id="product2" class="section-p1">
+      <h2>Latest Products</h2>
+      <p>Glam essentials for everyone</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="./img/products/blue shirt" alt="" />
+          <div class="des">
+            <span>GAP</span>
+            <h5>Cropped Chambray Denim Shirt with Eyelet Hem Detail</h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>Rs.1599</h4>
+          </div>
+          <a href="#"
+            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="./img/products/cream pants" alt="" />
+          <div class="des">
+            <span>GAP</span>
+            <h5>High-Rise Wide-Leg Linen Trousers</h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>Rs.1750</h4>
+          </div>
+          <a href="#"
+            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="./img/products/jogger pink" alt="" />
+          <div class="des">
+            <span>OUTRYT</span>
+            <h5>Joggers with Elasticated Hem</h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>Rs.844</h4>
+          </div>
+          <a href="#"
+            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="./img/products/cotton sh.avif" alt="" />
+          <div class="des">
+            <span>OUTRYT</span>
+            <h5>Women Striped Cotton Shirt</h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>Rs.765</h4>
+          </div>
+          <a href="#"
+            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="./img/products/dress.avif" alt="" />
+          <div class="des">
+            <span>SVRNAA</span>
+            <h5>Women Brocade Dupatta with Zari Border
+            </h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>Rs.559</h4>
+          </div>
+          <a href="#"
+            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="./img/products/green sh.avif" alt="" />
+          <div class="des">
+            <span>LOUIS PHILIPPE
+            </span>
+            <h5>Colourblock Slim Fit Cotton Polo T-Shirt
+            </h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>Rs.1299</h4>
+          </div>
+          <a href="#"
+            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="./img/products/sneakers.avif" alt="" />
+          <div class="des">
+            <span>RED TAPE</span>
+            <h5>Men Logo Print Lace-Up Sneakers
+            </h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>Rs.1540</h4>
+          </div>
+          <a href="#"
+            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="pro">
+          <img src="./img/products/jeans k.avif" alt="" />
+          <div class="des">
+            <span>KOTTY</span>
+            <h5>Men Straight Jeans with 5-Pocket Styling
+            </h5>
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h4>Rs.899</h4>
+          </div>
+          <a href="#"
+            ><i class="fa fa-shopping-cart cart" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="sm-banner" class="section-p1">
+      <div class="banner-box"> 
+      </div>
+      <div class="banner-box banner-box2">
+      </div>
+    </section>
+    <section id="banner3">
+      <div class="banner-box">
+        <h2>ETHICAL WEAR</h2>
+        <h3>Up to 40% OFF</h3>
+      </div>
+      <div class="banner-box banner-box2">
+        <h2>TEES</h2>
+        <h3>Min 50-70% OFF</h3>
+      </div>
+      <div class="banner-box banner-box3">
+        <h2>KURTA PYJAMAS</h2>
+        <h3>Up to 68% OFF</h3>
+      </div>
+    </section>
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>
+          Get E-mail updates about our latest shop and
+          <span>Special offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your E-mail Address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+    <div class="topbtn">
+      <a
+        id="button"
+        href="#ImgSection"
+        class="btn btn-lg btn-outline-danger"
+        role="button"
+      >
+      <i class="fa fa-caret-up" aria-hidden="true"></i>
+      </a>
+    </div>
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/newlogo1.PNG" alt="" />
+        <h4>Contact</h4>
+        <p>
+          <strong>Address :</strong>562 Wellington Road, Street 32, San
+          Francisco
+        </p>
+        <p><strong>Phone :</strong>+01 2222 365/+91 01234 56789</p>
+        <p><strong>Hours :</strong>10:00-18:00, Mon-Sat</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store & Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="" />
+          <img src="img/pay/play.jpg" alt="" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="" />
+      </div>
+      <div class="copy">
+        <p>@ 2024, xyz etc - HTML CSS Ecommerce webpage</p>
+      </div>
+    </footer>
+
+    <script src="./script.js">
+      
+    </script>
+  </body>
+</html>
