@@ -53,66 +53,100 @@
         <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>
       </div>
     </section>
-    <section id="about-header">
-      <h2>#cart</h2>
-      <p>Add your coupon code & SAVE upto 70%!</p>
-    </section>
-    <section id="cart" class="section-p1">
-      <table width="100%">
-        <thead>
-          <tr>
-            <td>Remove</td>
-            <td>Image</td>
-            <td>Product</td>
-            <td>Price</td>
-            <td>Quantity</td>
-            <td>Subtotal</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href="#"><i class="fa fa-times" aria-hidden="true"></i> </a>
-            </td>
-            <td><img src="img/products/green sh.avif" alt="" /></td>
-            <td>Colourblock Slim Fit Cotton Polo T-Shirt</td>
-            <td>RS.1299</td>
-            <td><input type="number" value="1" /></td>
-            <td>RS.1299</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#"><i class="fa fa-times" aria-hidden="true"></i> </a>
-            </td>
-            <td><img src="img/products/sneakers.avif" alt="" /></td>
-            <td>Men Logo Print Lace-Up Sneakers</td>
-            <td>RS.1540</td>
-            <td><input type="number" value="1" /></td>
-            <td>RS.1540</td>
-          </tr>
-          <tr>
-            <td>
-              <a href="#"><i class="fa fa-times" aria-hidden="true"></i> </a>
-            </td>
-            <td><img src="img/products/jeans k.avif" alt="" /></td>
-            <td>Men Straight Jeans with 5-Pocket Styling</td>
-            <td>RS.899</td>
-            <td><input type="number" value="1" /></td>
-            <td>RS.899</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section id="cart-add" class="section-p1">
-      <div id="coupon">
-        <h3>Apply Coupon</h3>
-        <div>
-          <input type="text" placeholder="Enter Your Coupon" />
-          <button class="normal">Apply</button>
-        </div>
+    <h1 id="se-page">Checkout</h1>
+    <section id="billing">
+      <div>
+        <form action="">
+          <div class="row1">
+            <div class="col1">
+              <h3 class="title">Billing address</h3>
+              <div class="inputBox">
+                <span>Full Name :</span>
+                <input type="text" placeholder="Your Name" id="name" />
+                <h6 id="H6Uname"></h6>
+              </div>
+              <div class="inputBox">
+                <span>E-mail :</span>
+                <input type="email" placeholder="example@xyz.com" id="email" />
+                <h6 id="H6Email"></h6>
+              </div>
+              <div class="inputBox">
+                <span>Address :</span>
+                <input
+                  type="text"
+                  placeholder="room - street - locality"
+                  id="add"
+                />
+                <h6 id="H6Add"></h6>
+              </div>
+              <div class="inputBox">
+                <span>City :</span>
+                <input type="text" placeholder="Mumbai" />
+              </div>
+
+              <div class="flex">
+                <div class="inputBox">
+                  <span>State :</span>
+                  <input type="text" placeholder="Maharashtra" />
+                </div>
+                <div class="inputBox">
+                  <span>Zip code :</span>
+                  <input type="text" placeholder="123 456" id="zip" />
+                  <h6 id="H6Zip"></h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col1">
+              <h3 class="title">Payment</h3>
+              <div class="inputBox">
+                <span>Card accepted :</span>
+                <img src="img/pay/card_img.png" alt="" />
+              </div>
+              <div class="inputBox">
+                <span>Name on Card :</span>
+                <input type="text" placeholder="Mr. xyz" />
+              </div>
+              <div class="inputBox">
+                <span>Credit card number :</span>
+                <input type="number" placeholder="1111-2222-3333-4444" />
+              </div>
+              <div class="inputBox">
+                <span>Exp month :</span>
+                <input type="text" placeholder="July" />
+              </div>
+
+              <div class="flex">
+                <div class="inputBox">
+                  <span>Exp year : </span>
+                  <input type="number" placeholder="2027" />
+                </div>
+                <div class="inputBox">
+                  <span>CVV :</span>
+                  <input type="number" placeholder="123" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="fs">
+              <input
+                type="submit"
+                value="Save Details"
+                class="submit-btn"
+                onclick="save()"
+              />
+            </div>
+            <div class="ss">
+              <input type="submit" value="Make Payment" class="submit-btn" />
+            </div>
+          </div>
+        </form>
       </div>
-      <div id="subtotal">
-        <h3>Cart Totals</h3>
+
+      <div id="subtotal2">
+        <h3 class="text">Cart Totals</h3>
         <table>
           <tr>
             <td>Cart Subtotal</td>
@@ -127,8 +161,8 @@
             <td><strong>Rs.3738</strong></td>
           </tr>
         </table>
-        <button class="normal" onclick="window.location.href='checkout.html';">
-          Proceed to checkout
+        <button class="normal" onclick="window.location.href='cart.html';">
+          Back to cart
         </button>
       </div>
     </section>
@@ -148,7 +182,7 @@
     <div class="topbtn">
       <a
         id="button"
-        href="#about-header"
+        href="#se-page"
         class="btn btn-lg btn-outline-danger"
         role="button"
       >
@@ -207,6 +241,6 @@
       </div>
     </footer>
 
-    <script></script>
+    <script src="./script.js"></script>
   </body>
 </html>

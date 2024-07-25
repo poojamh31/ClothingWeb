@@ -52,3 +52,47 @@ const search = () => {
     }
   }
 };
+
+function save() {
+  var name = document.getElementById("name");
+  var email = document.getElementById("email");
+  var add = document.getElementById("add");
+  var zip = document.getElementById("zip");
+
+  if (
+    name.value == "" &&
+    email.value == "" &&
+    add.value == "" &&
+    zip.value == ""
+  ) {
+    document.getElementById("H6Uname").innerHTML = "Name is required*";
+    document.getElementById("name").style.border = "2px solid red";
+    document.getElementById("H6Email").innerHTML = "Email is required*";
+    document.getElementById("email").style.border = "2px solid red";
+    document.getElementById("H6Add").innerHTML = "Address is required*";
+    document.getElementById("add").style.border = "2px solid red";
+    document.getElementById("H6Zip").innerHTML = "Zip code is required*";
+    document.getElementById("zip").style.border = "2px solid red";
+    return false;
+    // alert("full name is required");
+  } else if (name.value == "") {
+    document.getElementById("H6Uname").innerHTML = "Name is required*";
+    document.getElementById("name").style.border = "2px solid red";
+    return false;
+  } else if (email.value == "") {
+    document.getElementById("H6Email").innerHTML = "Email is required*";
+    document.getElementById("email").style.border = "2px solid red";
+    return false;
+  } else if (add.value == "") {
+    document.getElementById("H6Add").innerHTML = "Address is required*";
+    document.getElementById("add").style.border = "2px solid red";
+    return false;
+  } else if (zip.value == "") {
+    document.getElementById("H6Zip").innerHTML = "Zip code is required*";
+    document.getElementById("zip").style.border = "2px solid red";
+    return false;
+  } else {
+    alert("Your details has been saved..!!");
+    return true;
+  }
+}
